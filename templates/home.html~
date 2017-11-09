@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h1> Welcome </h1>
+</head>
+
+<br> <br> <center>
+
+'Tis an image:
+ <br> <br>
+
+<img src={{img_url}}>
+
+<br> <br>
+'Tis an explanation of the image content:
+ <br> <br>
+
+<i> 
+{{exp}}
+</i>
+</html>
