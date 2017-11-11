@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<h1> Welcome </h1>
+</head>
+<body>
+
+<hr> 
+
+<h2> Getty API </h2>
+<h3> Here, the image searchword was "kitties" </h3>
+
+{% for item in ret %}
+
+<b> Title: </b> {{item['title']}}
+<br>
+<br>
+<img src={{item['uri']}}>
+<br> <br>
+
+<b> Caption: </b> <br>
+{{item['caption']}}
+
+<hr>
+{% endfor %}
+
+
+
+</body>
+</html>

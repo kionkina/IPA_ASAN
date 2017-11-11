@@ -8,8 +8,6 @@
 
 <hr> 
 
-<h2> CLICK <a href="/getty"> HERE </a> FOR GETTY API </h2>
-
 <h2> NASA API </h2>
 'Tis an image:
  <br> <br>
@@ -25,6 +23,7 @@
 </i>
 
 <br> <br> <hr>
+<h2> Flickr API</h2>
 
 </body>
 </html>

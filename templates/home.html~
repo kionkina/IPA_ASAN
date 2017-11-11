@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<center>
 <h1> Welcome </h1>
 </head>
-
-<br> <br> <center>
+<body bgcolor="gray">
+<br> <br> 
 
 'Tis an image:
  <br> <br>
 
-<img src={{img_url}}>
+<img src={{img_url}} height="300px" width="600px">
 
 <br> <br>
 'Tis an explanation of the image content:
@@ -18,4 +19,10 @@
 <i> 
 {{exp}}
 </i>
+
+
+<br>
+<br>
+<br>
+</body>
 </html>
