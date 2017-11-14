@@ -50,7 +50,7 @@ for i in range(10):
     d['title'] = result['images'][i]['title']
     inner_dict = result['images'][i]['display_sizes'][0]
     d['uri'] = inner_dict['uri']
-    d['caption']= result['images'][0]['caption']
+    d['caption']= result['images'][i]['caption']
     ret.append(d)
 
 #print ret

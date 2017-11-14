@@ -22,24 +22,27 @@ exp= data['explanation']
 app = Flask(__name__)
 
 
-#------ urllib2 error -----------------------------------------------------------------------------
-
+#------ HTTP Error 403: Forbidden Error ---------------------------------------------------------------------------
+# "Bots may not be used to retreive bulk content for any use directly related to an approved bot task.
+# This includes dynamically loading pages from another website, which may result in the website being 
+# denied access. 
 '''
 phrase = "kitties"
 resp = urllib2.urlopen("https://api.gettyimages.com/v3/search/images?Api-Key=" + getty_key+"phrase=" +phrase)
 result = resp.read()
 '''
-
 #-------------------------------------------------------------------------------------------------
 
 # SO I used requests instead
 getty_key="q7pua4pkzwvj26yakgvnaxvj"
 getty_secret_key="SUmeJueqYaAWVuCFQkCypEepBaUMw4E35j2jB3gGsWayy"
+
 headers = { 'Api-Key': 'q7pua4pkzwvj26yakgvnaxvj'}
 params = {'phrase': 'kitties'}
 url = 'https://api.gettyimages.com/v3/search/images'
 resp= requests.get(url, headers=headers, params=params)
 result = resp.json()
+
 
 ret=[]
 for i in range(10):
